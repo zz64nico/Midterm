@@ -1,0 +1,21 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/guessFragment">
+
+    <fragment
+        android:id="@+id/guessFragment"
+        android:name="YOUR.ACTUAL.PACKAGE.NAME.GuessFragment"
+        android:label="GuessFragment">
+        <action
+            android:id="@+id/action_to_game_fragment"
+            app:destination="@id/gameFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/gameFragment"
+        android:name="YOUR.ACTUAL.PACKAGE.NAME.GameFragment"
+        android:label="GameFragment" />
+
+</navigation>
